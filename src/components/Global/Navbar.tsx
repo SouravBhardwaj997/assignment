@@ -29,9 +29,13 @@ export const Navbar = () => {
               <Link href="/">Company</Link>
             </li>
           </ul>
-          <Button className="border-2 border-primary hover:bg-primary hover:text-white transition-all duration-300  px-5 flex items-center gap-2 group font-medium">
+          <Button
+            className="border-2 border-primary hover:bg-primary hover:text-white transition-all duration-300  px-4 flex items-center gap-2 group font-medium bg-transparent"
+            rightIcon={
+              <ArrowIcon className="group-hover:text-white group-hover:-translate-y-1 group-hover:translate-x-1   fill-primary transition-all duration-300 ease-in-out" />
+            }
+          >
             <span>Get In Touch</span>
-            <ArrowIcon className="group-hover:text-white group-hover:-translate-y-1 group-hover:translate-x-1   fill-primary transition-all duration-300 ease-in-out" />
           </Button>
         </div>
       </div>

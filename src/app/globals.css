@@ -2,4 +2,6 @@
 
 @theme inline {
   --color-primary: #2dc67d;
+  --color-secondary: #ff8c91;
+  --color-gray-dark: #233a41;
 }

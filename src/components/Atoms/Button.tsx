@@ -30,7 +30,7 @@ export interface ButtonProps {
   children?: React.ReactNode;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button = ({
   label,
   value,
   onClick,
@@ -40,7 +40,7 @@ export const Button: React.FC<ButtonProps> = ({
   rightIcon,
   loading = false,
   children,
-}) => {
+}: ButtonProps) => {
   const handleClick = () => {
     if (!disabled && onClick) onClick(value);
   };
@@ -49,7 +49,7 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       onClick={handleClick}
       disabled={disabled || loading}
-      className={`inline-flex items-center gap-2 px-4 py-2 rounded-md border bg-white hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none transition cursor-pointer ${className}`}
+      className={`inline-flex items-center gap-1 px-4 py-2 rounded-md border bg-white hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none transition cursor-pointer ${className}`}
     >
       {loading ? (
         <span className="animate-spin border-2 border-gray-400 border-t-transparent rounded-full w-4 h-4"></span>
