@@ -7,7 +7,7 @@ import { ArrowIcon } from "../icons/Arrow";
 export const Navbar = () => {
   return (
     <Container>
-      <div className="py-4 flex  justify-between items-center">
+      <div className="py-4 flex font-poppins justify-between items-center">
         <Link href="/" className="flex gap-2 items-center font-bold text-xl">
           <Logo />
         </Link>

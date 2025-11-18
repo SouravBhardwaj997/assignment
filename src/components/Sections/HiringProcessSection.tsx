@@ -38,7 +38,7 @@ export const HiringProcessSection = () => {
           Take a look at our simple and straightforward process to hire software
           developers from ValueCoders.
         </p>
-        <div className="grid grid-cols-4 mt-8">
+        <div className="grid grid-cols-4 mt-8 gap-10">
           {hiringProcessData.map((data, i) => (
             <HiringProcessCard
               showRightArrow={hiringProcessData.length - 1 !== i}

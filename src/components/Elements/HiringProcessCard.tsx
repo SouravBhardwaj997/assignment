@@ -22,7 +22,7 @@ export const HiringProcessCard = ({
         </div>
       </div>
       {showRightArrow && (
-        <div className="absolute top-20 -right-5">
+        <div className="absolute top-20 -right-9">
           <RightArrow />
         </div>
       )}

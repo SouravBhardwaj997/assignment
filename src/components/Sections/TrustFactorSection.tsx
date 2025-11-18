@@ -22,7 +22,7 @@ export const TrustFactorSection = () => {
             />
           </div>
           <div className="flex flex-col justify-center gap-6 w-1/2">
-            <p className="text-4xl font-semibold">
+            <p className="text-4xl leading-normal font-semibold">
               Top Companies Trust ValueCoders For Hiring Software Developers
             </p>
             <p className="leading-normal">
