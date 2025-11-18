@@ -5,7 +5,7 @@ import { ArrowIcon, Line } from "../icons/Arrow";
 export const HeroSection = () => {
   return (
     <div className="bg-[url('/hero-bg.png')] bg-no-repeat bg-cover">
-      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 sm:w-full xl:w-11/12 mx-auto pb-12 pt-24 flex gap-14">
+      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 sm:w-full xl:w-11/12 mx-auto pb-18 pt-24 flex gap-14">
         <div className="flex flex-col justify-center gap-2 w-3/5 ">
           <p className="uppercase font-medium flex gap-3 items-center  text-primary text-5xl">
             Hire Dedicated <Line />

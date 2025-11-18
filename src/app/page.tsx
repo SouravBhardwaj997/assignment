@@ -1,5 +1,10 @@
-import { HeroSection } from "@/components/Sections";
+import { HeroSection, WhyUsSection } from "@/components/Sections";
 
 export default function Home() {
-  return <HeroSection />;
+  return (
+    <>
+      <HeroSection />
+      <WhyUsSection />
+    </>
+  );
 }
