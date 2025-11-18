@@ -1,5 +1,6 @@
 import { HeroSection, WhyUsSection } from "@/components/Sections";
 import { TechSection } from "@/components/Sections/TechSection";
+import { WhyHireIndiaSection } from "@/components/Sections/WhyHireIndiaSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <HeroSection />
       <WhyUsSection />
       <TechSection />
+      <WhyHireIndiaSection />
     </>
   );
 }
