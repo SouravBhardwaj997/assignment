@@ -1,6 +1,31 @@
 import { TestimonialCard } from "../Elements/TestimonialCard";
 import { GlowEffect } from "../Elements/GlowEffect";
-
+const TestimonialData = [
+  {
+    name: "Krish Bruynson",
+    designation: "Director, Storloft",
+    imgUrl: "/images/testimonials/testimonial-1.png",
+    stars: 5,
+  },
+  {
+    name: "Krish Bruynson",
+    designation: "Director, Storloft",
+    imgUrl: "/images/testimonials/testimonial-2.png",
+    stars: 5,
+  },
+  {
+    name: "Krish Bruynson",
+    designation: "Director, Storloft",
+    imgUrl: "/images/testimonials/testimonial-4.png",
+    stars: 5,
+  },
+  {
+    name: "Krish Bruynson",
+    designation: "Director, Storloft",
+    imgUrl: "/images/testimonials/testimonial-3.png",
+    stars: 5,
+  },
+];
 export const TestimonialSection = () => {
   return (
     <div className="bg-white relative">
@@ -27,10 +52,9 @@ export const TestimonialSection = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-items-center mt-10 lg:gap-0 gap-10">
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
-          <TestimonialCard />
+          {TestimonialData.map((item, i) => (
+            <TestimonialCard key={i} {...item} />
+          ))}
         </div>
       </div>
     </div>

@@ -1,12 +1,22 @@
 import Image from "next/image";
 import { PlayIcon, StarIcon } from "../icons/SocialIcons";
 
-export const TestimonialCard = () => {
+export const TestimonialCard = ({
+  imgUrl,
+  name,
+  designation,
+  stars,
+}: {
+  imgUrl: string;
+  name: string;
+  designation: string;
+  stars?: number | null;
+}) => {
   return (
     <div className="flex flex-col gap-3">
       <div className="h-80 w-60 relative">
         <Image
-          src="/images/testimonials/testimonial-1.png"
+          src={imgUrl}
           fill
           alt="Testimonial"
           className="object-cover object-center"
@@ -24,8 +34,8 @@ export const TestimonialCard = () => {
 
         <div className="size-16 bg-white absolute -bottom-8 -right-8 rotate-45" />
       </div>
-      <p className="text-black font-semibold text-2xl">Krish Bruynson</p>
-      <p className="font-light">Director, Storloft</p>
+      <p className="text-black font-semibold text-2xl">{name}</p>
+      <p className="font-light">{designation}</p>
       <div className="flex gap-1">
         <StarIcon />
         <StarIcon />

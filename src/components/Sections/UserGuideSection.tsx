@@ -33,6 +33,8 @@ export const UserGuideSection = () => {
               {userBenefits.map((benefit, i) => (
                 <div
                   className={`px-4 py-7 font-light ${
+                    i == 0 ? "bg-primary text-white" : "bg-white"
+                  }  ${
                     userBenefits.length - 1 === i
                       ? ""
                       : "border-b border-b-black/3"
