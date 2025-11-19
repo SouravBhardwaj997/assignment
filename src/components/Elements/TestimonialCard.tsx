@@ -15,7 +15,7 @@ export const TestimonialCard = () => {
         <div className="absolute inset-0 bg-black opacity-40" />
 
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer">
-          <span className="absolute inset-0 inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping"></span>
+          <span className="absolute inset-0 h-full w-full rounded-full bg-primary opacity-75 animate-ping"></span>
 
           <div className="relative inline-flex items-center justify-center rounded-full bg-primary shadow-lg">
             <PlayIcon />

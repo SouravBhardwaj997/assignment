@@ -40,6 +40,8 @@ export const WhyUsSection = () => {
   ];
   return (
     <div className="relative bg-white">
+      <div className="absolute top-0 right-0 w-[55%] h-[65%] bg-[url('/images/bg-right.png')] bg-no-repeat bg-cover" />
+      <div className="absolute top-0 left-0 w-[40%] h-[60%] bg-[url('/images/bg-left.png')] bg-no-repeat bg-cover" />
       <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 sm:w-full xl:w-11/12 mx-auto py-14 flex flex-col justify-center gap-6 items-center">
         <p className="text-5xl font-semibold text-center text-gray-dark">
           Why Hire Developers From Our Name
