@@ -26,7 +26,7 @@ export const RoundTickIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_9_459)">
+      <g clipPath="url(#clip0_9_459)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -176,29 +176,29 @@ export const TeamIcon = () => {
       <path
         d="M51 63V57C51 53.8174 49.7357 50.7652 47.4853 48.5147C45.2348 46.2643 42.1826 45 39 45H15C11.8174 45 8.76516 46.2643 6.51472 48.5147C4.26428 50.7652 3 53.8174 3 57V63"
         stroke="black"
-        stroke-width="3.5"
-        stroke-linecap="round"
+        strokeWidth="3.5"
+        strokeLinecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M27 33C33.6274 33 39 27.6274 39 21C39 14.3726 33.6274 9 27 9C20.3726 9 15 14.3726 15 21C15 27.6274 20.3726 33 27 33Z"
         stroke="black"
-        stroke-width="3.5"
-        stroke-linecap="round"
+        strokeWidth="3.5"
+        strokeLinecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M69 62.9999V56.9999C68.998 54.3411 68.1131 51.7582 66.4841 49.6568C64.8551 47.5555 62.5744 46.0546 60 45.3899"
         stroke="black"
-        stroke-width="3.5"
-        stroke-linecap="round"
+        strokeWidth="3.5"
+        strokeLinecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M48 9.38989C50.5812 10.0508 52.8691 11.552 54.5029 13.6568C56.1367 15.7617 57.0235 18.3504 57.0235 21.0149C57.0235 23.6794 56.1367 26.2681 54.5029 28.373C52.8691 30.4778 50.5812 31.979 48 32.6399"
         stroke="black"
-        stroke-width="3.5"
-        stroke-linecap="round"
+        strokeWidth="3.5"
+        strokeLinecap="round"
         stroke-linejoin="round"
       />
     </svg>
