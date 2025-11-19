@@ -12,9 +12,9 @@ const advantages: string[] = [
 export const WhyHireIndiaSection = () => {
   return (
     <div className="bg-dark-purple text-white">
-      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 sm:w-full xl:w-11/12 mx-auto py-14 flex  justify-center gap-6 items-center">
-        <div className="w-2/3 flex flex-col relative h-[550px]">
-          <p className="text-5xl font-semibold leading-normal">
+      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto py-14 flex lg:flex-row flex-col justify-center gap-6 items-center">
+        <div className="w-full lg:w-2/3 flex flex-col relative h-[400px] md:h-[550px]">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-normal">
             Why Hire Software Developers in India?
           </p>
           <Image
@@ -23,7 +23,7 @@ export const WhyHireIndiaSection = () => {
             alt="Why Hire In India"
           />
         </div>
-        <div className="w-1/3">
+        <div className="w-full lg:w-1/3">
           <ul>
             {advantages.map((advantage, i) => (
               <li

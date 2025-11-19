@@ -22,7 +22,7 @@ export const HiringProcessCard = ({
         </div>
       </div>
       {showRightArrow && (
-        <div className="absolute top-20 -right-9">
+        <div className="lg:block hidden absolute top-20 -right-9">
           <RightArrow />
         </div>
       )}

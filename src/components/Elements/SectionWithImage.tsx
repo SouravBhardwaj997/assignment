@@ -17,11 +17,13 @@ export const SectionWithImage = ({
 }) => {
   return (
     <div
-      className={`w-full flex justify-between  text-gray-dark ${
-        imageAlignment === "left" ? "flex-row" : "flex-row-reverse"
+      className={`w-full flex justify-between lg:gap-0 gap-10  text-gray-dark ${
+        imageAlignment === "left"
+          ? "flex-col lg:flex-row"
+          : "flex-col lg:flex-row-reverse"
       }`}
     >
-      <div className="w-1/2 relative">
+      <div className="lg:w-1/2 w-full flex justify-center items-center relative">
         <Image
           src={imgUrl}
           width={500}
@@ -29,8 +31,8 @@ export const SectionWithImage = ({
           alt="Person Using Laptop"
         />
       </div>
-      <div className="flex flex-col justify-center gap-6 w-1/2">
-        <p className="text-4xl font-semibold">{title}</p>
+      <div className="flex flex-col justify-center gap-6 w-full lg:w-1/2">
+        <p className="text-3xl md:text-4xl font-semibold">{title}</p>
         {points.map((point, i) => (
           <div className="flex gap-2" key={i}>
             <div
@@ -42,8 +44,8 @@ export const SectionWithImage = ({
             </div>
 
             <div className="flex flex-col gap-2">
-              <p className="text-2xl">{point.title}</p>
-              <p className="text-lg">{point.subTitle}</p>
+              <p className="text-xl md:text-2xl">{point.title}</p>
+              <p className="text-sm md:text-lg">{point.subTitle}</p>
             </div>
           </div>
         ))}

@@ -23,13 +23,13 @@ const userBenefits = [
 export const UserGuideSection = () => {
   return (
     <div className="bg-beige">
-      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 sm:w-full xl:w-11/12 mx-auto py-16">
+      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto py-14 md:py-16">
         <div className="w-full flex flex-col gap-10 items-center text-gray-dark">
-          <p className="font-semibold text-4xl">
+          <p className="font-semibold text-3xl md:text-4xl lg:text-5xl">
             User Guide to Hire Dedicated Software Developers
           </p>
-          <div className="flex gap-6">
-            <div className="flex flex-col bg-white w-1/3 shadow-sm">
+          <div className="flex flex-col lg:flex-row gap-6">
+            <div className="flex flex-col bg-white w-full lg:w-1/3 shadow-sm">
               {userBenefits.map((benefit, i) => (
                 <div
                   className={`px-4 py-7 font-light ${
@@ -43,7 +43,7 @@ export const UserGuideSection = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col bg-white gap-6 w-2/3 py-8 px-6 shadow-sm">
+            <div className="flex flex-col bg-white gap-6 w-full lg:w-2/3 py-8 px-6 shadow-sm">
               <p className="text-black font-medium text-xl">
                 Benefits of Hiring Developers
               </p>
@@ -52,7 +52,7 @@ export const UserGuideSection = () => {
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s, when an unknown printer took a
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
                 {points.map((point, i) => (
                   <div className="flex gap-2 items-center" key={i}>
                     <RoundTickIcon />

@@ -33,7 +33,7 @@ const FooterLinkData = [
 export const Footer = () => {
   return (
     <div className="bg-black flex flex-col gap-10  text-white">
-      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 sm:w-full xl:w-11/12 mx-auto py-12 ">
+      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto py-12 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="flex flex-col gap-4">
             <Link href={"/"}>
