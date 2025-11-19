@@ -1,5 +1,6 @@
 import React from "react";
 import { SectionWithImage } from "../Elements/SectionWithImage";
+import { GlowEffect } from "../Elements/GlowEffect";
 
 export const WhyUsSection = () => {
   const dummyData = [
@@ -40,6 +41,18 @@ export const WhyUsSection = () => {
   ];
   return (
     <div className="relative bg-white">
+      <GlowEffect
+        position="left-5 bottom-5"
+        size="size-80"
+        color="bg-secondary/33"
+        className="rounded-none"
+      />
+      <GlowEffect
+        position="right-0 top-0"
+        size="size-80"
+        color="bg-primary/25"
+        className="rounded-none"
+      />
       <div className="absolute top-0 right-0 w-[55%] h-[65%] bg-[url('/images/bg-right.png')] bg-no-repeat bg-cover" />
       <div className="absolute top-0 left-0 w-[40%] h-[60%] bg-[url('/images/bg-left.png')] bg-no-repeat bg-cover" />
       <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 sm:w-full xl:w-11/12 mx-auto py-14 flex flex-col justify-center gap-6 items-center">

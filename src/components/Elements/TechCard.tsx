@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { GlowEffect } from "./GlowEffect";
 
 export const TechCard = ({
   imgUrl,
@@ -15,7 +16,7 @@ export const TechCard = ({
 }) => {
   return (
     <div
-      className={`flex flex-col gap-5  p-7 ${bgColor} border-b-4 ${borderColor}  w-full`}
+      className={`flex flex-col gap-5 relative  p-7 ${bgColor} border-b-4 ${borderColor}  w-full`}
     >
       <Image src={imgUrl} height={50} width={50} alt="Web Settings" />
       <p className="font-medium text-xl">{title} </p>

@@ -17,7 +17,7 @@ export const SectionWithImage = ({
 }) => {
   return (
     <div
-      className={`w-full flex justify-center  text-gray-dark ${
+      className={`w-full flex justify-between  text-gray-dark ${
         imageAlignment === "left" ? "flex-row" : "flex-row-reverse"
       }`}
     >
