@@ -1,42 +1,7 @@
+import { whyUsSectionData } from "@/constants";
 import { GlowEffect, SectionWithImage } from "../Elements/";
 
 export const WhyUsSection = () => {
-  const dummyData = [
-    {
-      title: "High Quality/Cost Ratio",
-      imgUrl: "/images/why-choose-us-1.png",
-      imageAlignment: "left",
-      points: [
-        {
-          title: "5+ hours of tests and interviews",
-          subTitle:
-            "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
-        },
-        {
-          title: "Seniority tests",
-          subTitle:
-            "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
-        },
-      ],
-    },
-    {
-      title: "High Quality/Cost Ratio",
-      imgUrl: "/images/why-choose-us-2.png",
-      imageAlignment: "right",
-      points: [
-        {
-          title: "5+ hours of tests and interviews",
-          subTitle:
-            "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
-        },
-        {
-          title: "Seniority tests",
-          subTitle:
-            "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
-        },
-      ],
-    },
-  ];
   return (
     <div className="relative bg-white">
       <GlowEffect
@@ -62,7 +27,7 @@ export const WhyUsSection = () => {
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text
           ever since
         </p>
-        {dummyData.map((item, index) => (
+        {whyUsSectionData.map((item, index) => (
           <div key={index}>
             <SectionWithImage {...item} />
           </div>

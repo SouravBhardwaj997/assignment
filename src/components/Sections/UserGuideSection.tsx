@@ -2,25 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { RoundTickIcon } from "../icons";
-
-const points = [
-  "Client-centric approach",
-  "Best-in-class project management",
-  "Global quality standards",
-  "Time-zone compatibility",
-  "Cutting-edge infrastructure",
-  "Agile adaptability",
-];
-
-const userBenefits = [
-  "Benefits of Hiring Developers",
-  "Key Factors to Consider While Hiring",
-  "Defining Your Project Requirements",
-  "Choosing the Right Development Model",
-  "Typical Challenges for Hiring Developers",
-  "Hiring Freelancers vs. Dedicated Developers",
-  "Communication with Remote Developers",
-];
+import { userBenefits, userBenefitsPoints } from "@/constants";
 
 export const UserGuideSection = () => {
   const [activeBenefit, setActiveBenefit] = useState(0);
@@ -60,7 +42,7 @@ export const UserGuideSection = () => {
                 dummy text ever since the 1500s, when an unknown printer took a
               </p>
               <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
-                {points.map((point, i) => (
+                {userBenefitsPoints.map((point, i) => (
                   <div className="flex gap-2 items-center" key={i}>
                     <RoundTickIcon />
                     <p className="font-medium">{point}</p>

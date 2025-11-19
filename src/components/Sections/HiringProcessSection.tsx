@@ -1,33 +1,7 @@
+import { hiringProcessData } from "@/constants";
 import { HiringProcessCard } from "../Elements/";
-import { DevMonitorIcon, PersonIcon, ScalingIcon, TeamIcon } from "../icons";
 
 export const HiringProcessSection = () => {
-  const hiringProcessData = [
-    {
-      title: "Inquiry",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      icon: <PersonIcon />,
-    },
-    {
-      title: "Select Developers",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      icon: <DevMonitorIcon />,
-    },
-    {
-      title: "Team Integration",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      icon: <TeamIcon />,
-    },
-    {
-      title: "Team Scaling",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      icon: <ScalingIcon />,
-    },
-  ];
   return (
     <div className="bg-[url('/hiring-process-bg.png')] bg-no-repeat bg-cover">
       <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto py-14 flex flex-col justify-center gap-6 items-center">

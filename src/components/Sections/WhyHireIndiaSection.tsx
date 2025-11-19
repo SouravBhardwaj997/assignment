@@ -1,13 +1,7 @@
+import { whyHireUsAdvantages } from "@/constants";
 import { ArrowIcon } from "../icons/Arrow";
 import Image from "next/image";
 
-const advantages: string[] = [
-  "English speaking programmers",
-  "Flexible Work Hours",
-  "Rapid Onboarding Process",
-  "Expertise in Top Technologies",
-  "Reliable Partner Credentials",
-];
 export const WhyHireIndiaSection = () => {
   return (
     <div className="bg-dark-purple text-white">
@@ -24,7 +18,7 @@ export const WhyHireIndiaSection = () => {
         </div>
         <div className="w-full lg:w-1/3">
           <ul>
-            {advantages.map((advantage, i) => (
+            {whyHireUsAdvantages.map((advantage, i) => (
               <li
                 key={advantage + i}
                 className="border-b border-gray-600 pt-6 pb-8 font-medium text-xl flex justify-between"

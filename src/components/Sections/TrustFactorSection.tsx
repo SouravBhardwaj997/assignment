@@ -1,13 +1,7 @@
 import Image from "next/image";
 import { RoundTickIcon } from "../icons";
-const points = [
-  "Client-centric approach",
-  "Best-in-class project management",
-  "Global quality standards",
-  "Time-zone compatibility",
-  "Cutting-edge infrastructure",
-  "Agile adaptability",
-];
+import { trustFactorPoints } from "@/constants";
+
 export const TrustFactorSection = () => {
   return (
     <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto py-14">
@@ -31,7 +25,7 @@ export const TrustFactorSection = () => {
             type and scrambled it to make a type specimen book.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {points.map((point, i) => (
+            {trustFactorPoints.map((point, i) => (
               <div className="flex gap-2 items-center" key={i}>
                 <RoundTickIcon />
                 <p className="font-medium">{point}</p>
