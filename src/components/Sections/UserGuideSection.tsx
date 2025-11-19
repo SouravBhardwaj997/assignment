@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import { RoundTickIcon } from "../icons";
 
@@ -21,6 +23,7 @@ const userBenefits = [
 ];
 
 export const UserGuideSection = () => {
+  const [activeBenefit, setActiveBenefit] = useState(0);
   return (
     <div className="bg-beige">
       <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto py-14 md:py-16">
@@ -32,8 +35,10 @@ export const UserGuideSection = () => {
             <div className="flex flex-col bg-white w-full lg:w-1/3 shadow-sm">
               {userBenefits.map((benefit, i) => (
                 <div
-                  className={`px-4 py-7 font-light ${
-                    i == 0 ? "bg-primary text-white" : "bg-white"
+                  role="button"
+                  onClick={() => setActiveBenefit(i)}
+                  className={`px-4 py-7 font-light cursor-pointer ${
+                    i == activeBenefit ? "bg-primary text-white" : "bg-white"
                   }  ${
                     userBenefits.length - 1 === i
                       ? ""

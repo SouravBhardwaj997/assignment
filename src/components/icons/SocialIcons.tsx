@@ -97,12 +97,26 @@ export const PlayIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* <circle opacity="0.22" cx="36" cy="36" r="36" fill="#2FC980" /> */}
       <circle cx="36" cy="36" r="30" fill="#2FC980" />
       <path
         d="M47.325 34.5562L29.925 24.2C29.7125 24.075 29.4938 24 29.2438 24C28.5625 24 28.0062 24.5625 28.0062 25.25H28V46.75H28.0062C28.0062 47.4375 28.5625 48 29.2438 48C29.5 48 29.7125 47.9125 29.9437 47.7875L47.325 37.4437C47.7375 37.1 48 36.5812 48 36C48 35.4187 47.7375 34.9062 47.325 34.5562Z"
         fill="white"
       />
+    </svg>
+  );
+};
+export const PauseIcon = () => {
+  return (
+    <svg
+      width="72"
+      height="72"
+      viewBox="0 0 72 72"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="36" cy="36" r="30" fill="#2FC980" />
+      <rect x="28" y="24" width="6" height="24" rx="2" fill="white" />
+      <rect x="38" y="24" width="6" height="24" rx="2" fill="white" />
     </svg>
   );
 };

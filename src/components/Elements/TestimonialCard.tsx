@@ -1,5 +1,7 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
-import { PlayIcon, StarIcon } from "../icons/SocialIcons";
+import { PauseIcon, PlayIcon, StarIcon } from "../icons/SocialIcons";
 
 export const TestimonialCard = ({
   imgUrl,
@@ -12,6 +14,7 @@ export const TestimonialCard = ({
   designation: string;
   stars: number;
 }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="flex flex-col gap-3">
       <div className="h-80 w-60 relative">
@@ -27,8 +30,12 @@ export const TestimonialCard = ({
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer">
           <span className="absolute inset-0 h-full w-full rounded-full bg-primary opacity-75 animate-ping"></span>
 
-          <div className="relative inline-flex items-center justify-center rounded-full bg-primary shadow-lg">
-            <PlayIcon />
+          <div
+            className="relative inline-flex items-center justify-center rounded-full bg-primary shadow-lg"
+            role="button"
+            onClick={() => setIsPlaying((prev) => !prev)}
+          >
+            {isPlaying ? <PauseIcon /> : <PlayIcon />}
           </div>
         </div>
 
