@@ -10,7 +10,7 @@ export const TestimonialCard = ({
   imgUrl: string;
   name: string;
   designation: string;
-  stars?: number | null;
+  stars: number;
 }) => {
   return (
     <div className="flex flex-col gap-3">
@@ -37,9 +37,9 @@ export const TestimonialCard = ({
       <p className="text-black font-semibold text-2xl">{name}</p>
       <p className="font-light">{designation}</p>
       <div className="flex gap-1">
-        <StarIcon />
-        <StarIcon />
-        <StarIcon />
+        {Array.from({ length: stars }).map((_, i) => {
+          return <StarIcon key={i} />;
+        })}
       </div>
     </div>
   );
