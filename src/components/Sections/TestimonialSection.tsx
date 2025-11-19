@@ -1,4 +1,5 @@
 import React from "react";
+import { TestimonialCard } from "../Elements/TestimonialCard";
 
 export const TestimonialSection = () => {
   return (
@@ -12,6 +13,12 @@ export const TestimonialSection = () => {
             Take a look at our simple and straightforward process to hire
             software
           </p>
+        </div>
+        <div className="grid grid-cols-4 mt-10">
+          <TestimonialCard />
+          <TestimonialCard />
+          <TestimonialCard />
+          <TestimonialCard />
         </div>
       </div>
     </div>

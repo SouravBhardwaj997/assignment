@@ -29,7 +29,7 @@ export const UserGuideSection = () => {
             User Guide to Hire Dedicated Software Developers
           </p>
           <div className="flex gap-6">
-            <div className="flex flex-col w-1/3 shadow-sm">
+            <div className="flex flex-col bg-white w-1/3 shadow-sm">
               {userBenefits.map((benefit, i) => (
                 <div
                   className={`px-4 py-7 font-light ${
@@ -43,7 +43,7 @@ export const UserGuideSection = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-6 w-2/3 py-8 px-6 shadow-sm">
+            <div className="flex flex-col bg-white gap-6 w-2/3 py-8 px-6 shadow-sm">
               <p className="text-black font-medium text-xl">
                 Benefits of Hiring Developers
               </p>

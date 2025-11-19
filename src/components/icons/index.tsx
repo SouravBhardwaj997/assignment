@@ -178,28 +178,28 @@ export const TeamIcon = () => {
         stroke="black"
         strokeWidth="3.5"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M27 33C33.6274 33 39 27.6274 39 21C39 14.3726 33.6274 9 27 9C20.3726 9 15 14.3726 15 21C15 27.6274 20.3726 33 27 33Z"
         stroke="black"
         strokeWidth="3.5"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M69 62.9999V56.9999C68.998 54.3411 68.1131 51.7582 66.4841 49.6568C64.8551 47.5555 62.5744 46.0546 60 45.3899"
         stroke="black"
         strokeWidth="3.5"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M48 9.38989C50.5812 10.0508 52.8691 11.552 54.5029 13.6568C56.1367 15.7617 57.0235 18.3504 57.0235 21.0149C57.0235 23.6794 56.1367 26.2681 54.5029 28.373C52.8691 30.4778 50.5812 31.979 48 32.6399"
         stroke="black"
         strokeWidth="3.5"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
