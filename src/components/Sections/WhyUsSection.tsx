@@ -1,6 +1,4 @@
-import React from "react";
-import { SectionWithImage } from "../Elements/SectionWithImage";
-import { GlowEffect } from "../Elements/GlowEffect";
+import { GlowEffect, SectionWithImage } from "../Elements/";
 
 export const WhyUsSection = () => {
   const dummyData = [

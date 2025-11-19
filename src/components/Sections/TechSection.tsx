@@ -1,5 +1,4 @@
-import { GlowEffect } from "../Elements/GlowEffect";
-import { TechCard } from "../Elements/TechCard";
+import { TechCard, GlowEffect } from "../Elements/";
 const techData: {
   imgUrl: string;
   title: string;

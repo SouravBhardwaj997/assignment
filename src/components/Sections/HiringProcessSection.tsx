@@ -1,4 +1,4 @@
-import { HiringProcessCard } from "../Elements/HiringProcessCard";
+import { HiringProcessCard } from "../Elements/";
 import { DevMonitorIcon, PersonIcon, ScalingIcon, TeamIcon } from "../icons";
 
 export const HiringProcessSection = () => {

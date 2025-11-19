@@ -1,5 +1,4 @@
-import { TestimonialCard } from "../Elements/TestimonialCard";
-import { GlowEffect } from "../Elements/GlowEffect";
+import { TestimonialCard, GlowEffect } from "../Elements/";
 const TestimonialData = [
   {
     name: "Krish Bruynson",

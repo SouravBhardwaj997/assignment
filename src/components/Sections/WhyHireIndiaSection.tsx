@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowIcon } from "../icons/Arrow";
 import Image from "next/image";
 
