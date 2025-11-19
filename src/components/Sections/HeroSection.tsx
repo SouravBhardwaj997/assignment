@@ -5,12 +5,12 @@ import { ArrowIcon, Line } from "../icons/Arrow";
 export const HeroSection = () => {
   return (
     <div className="bg-[url('/hero-bg.png')] bg-no-repeat bg-cover">
-      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto pb-14 pt-14 md:pb-18 md:pt-24 flex lg:flex-row flex-col gap-14">
+      <div className="2xl:w-10/12 lg:w-10/12 md:w-5/6 w-11/12 xl:w-11/12 mx-auto pb-14 pt-14 md:pb-18 md:pt-24 flex lg:flex-row flex-col gap-14 ">
         <div className="flex flex-col justify-center gap-4 md:gap-2 w-full lg:w-3/5 ">
-          <p className="uppercase font-medium flex gap-3 items-center  text-primary text-xl md:text-4xl lg:text-5xl">
+          <p className="uppercase font-medium flex gap-3 items-center  text-primary text-xl md:text-4xl lg:text-4xl xl:text-5xl">
             Hire Dedicated <Line />
           </p>
-          <p className="uppercase text-5xl md:text-6xl lg:text-8xl font-bold text-gray-dark">
+          <p className="uppercase text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-dark">
             Developers
           </p>
           <p className="text-lg">

@@ -26,7 +26,7 @@ export const HiringProcessCard = ({
           <RightArrow />
         </div>
       )}
-      <p className="font-semibold text-2xl">{title}</p>
+      <p className="font-semibold text-2xl text-center">{title}</p>
       <p className="text-center font-light">{description}</p>
     </div>
   );
